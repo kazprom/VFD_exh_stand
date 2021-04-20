@@ -1,3 +1,8 @@
+/* Main */
+html {
+  height: auto;
+}
+
 /* Colors */
 /* Animation */
 /* Animation */
@@ -115,22 +120,6 @@ h2 {
   margin: 0;
 }
 
-h3 {
-  font-size: 24px;
-  line-height: 1.1;
-  color: black;
-  text-align: left;
-  margin: 0;
-}
-
-h4 {
-  font-size: 24px;
-  line-height: 1.1;
-  color: gray;
-  text-align: left;
-  margin: 0;
-}
-
 h5 {
   margin: inherit;
   font-family: "FFUnitPro";
@@ -151,28 +140,33 @@ h6 {
 
 /* Boxes */
 .smallbox, .bigbox {
+  box-sizing: border-box;
   margin: auto;
   border: solid 3px;
 }
 
-.flex {
+.flex, .block {
   display: flex;
   margin: auto;
+}
+
+.block {
   width: calc(100% - 20px);
+}
+
+.flex {
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .bigbox {
   height: 100%;
-  width: calc(100% - 40px);
+  width: calc(100% - 20px);
 }
 
 .smallbox {
   height: 100%;
   width: calc(50% - 20px);
-}
-
-.flex {
-  flex-wrap: wrap;
 }
 
 /* Headers */
@@ -223,12 +217,13 @@ h6 {
 }
 .smallbox[name=features] .textbox {
   padding: 5px;
+  padding-bottom: 15px;
   width: calc(50% - 15px);
 }
-.smallbox[name=features] .textbox h3 {
-  font-size: 22px;
+.smallbox[name=features] .textbox h5 {
+  font-size: 26px;
 }
-.smallbox[name=features] .textbox h4 {
+.smallbox[name=features] .textbox h6 {
   font-size: 18px;
   line-height: 1.35;
 }
