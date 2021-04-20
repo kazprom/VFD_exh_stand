@@ -1,0 +1,230 @@
+/* Colors */
+/* Animation */
+/* Animation */
+@keyframes numbers_ani {
+  0% {
+    width: 25%;
+    opacity: 0.75;
+    color: gray;
+  }
+  5% {
+    width: 35%;
+    opacity: 1;
+    color: #DA291A;
+  }
+  25% {
+    width: 35%;
+    opacity: 1;
+    color: #DA291A;
+  }
+  30% {
+    width: 25%;
+    opacity: 0.75;
+    color: gray;
+  }
+  100% {
+    width: 25%;
+    opacity: 0.75;
+    color: gray;
+  }
+}
+.ani_box {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: bolder;
+  line-height: 0.9;
+  width: 25%;
+  opacity: 0.75;
+  animation-name: numbers_ani;
+  animation-iteration-count: infinite;
+  color: gray;
+  animation-duration: 32s;
+}
+
+.ani_box[name=e1] {
+  animation-delay: 0s;
+}
+
+.ani_box[name=e2] {
+  animation-delay: 8s;
+}
+
+.ani_box[name=e3] {
+  animation-delay: 16s;
+}
+
+.ani_box[name=e4] {
+  animation-delay: 24s;
+}
+
+.ani_box_bottom {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 50%;
+}
+.ani_box_bottom h5.num {
+  font-size: 72px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 2px;
+  align-self: center;
+  padding-top: 10px;
+}
+.ani_box_bottom h6.num {
+  color: inherit;
+  margin-top: 0;
+  padding-top: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "FFUnitPro";
+  src: url("fonts/FFUnitPro-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FFUnitPro";
+  src: url("fonts/FFUnitPro-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+/* Text */
+html {
+  font-family: "FFUnitPro";
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  color: #DA291A;
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.1;
+  color: white;
+  text-align: left;
+  margin: 0;
+}
+
+h5 {
+  margin: inherit;
+  font-family: "FFUnitPro";
+  font-size: 24px;
+  line-height: 0.9;
+  font-weight: normal;
+}
+
+h6 {
+  margin-top: 10px;
+  font-family: "FFUnitPro";
+  margin-bottom: 1px;
+  color: gray;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1.15;
+}
+
+/* Bones */
+.small_box, .bigbox[name=numbers] {
+  margin: auto;
+  border: solid 3px;
+}
+
+.smallbox_header, .bigbox_header {
+  display: flex;
+  margin-top: -1px;
+  margin-left: -1px;
+  margin-bottom: 5px;
+}
+
+.smallbox_header_text, .bigbox_header_text {
+  padding: 2px;
+  background-color: #DA291A;
+}
+
+.smallbox_content, .bigbox_content {
+  display: flex;
+  padding: 7px;
+  line-height: 1.35;
+  text-align: justify;
+}
+
+.header_corner {
+  width: 0;
+  height: 0;
+  border-top: 40px solid #DA291A;
+  border-right: 30px solid transparent;
+}
+
+.flex {
+  display: flex;
+  margin: auto;
+  width: calc(100% - 20px);
+}
+
+.bigbox[name=numbers] {
+  height: 100%;
+  width: calc(100% - 40px);
+}
+
+.bigbox_header_text {
+  width: 30%;
+}
+
+.small_box {
+  height: 100%;
+  width: calc(50% - 20px);
+}
+
+.smallbox_header_text {
+  width: 60%;
+}
+
+/* Unique settings */
+/* 1 */
+.bigbox[name=numbers] {
+  border-color: #DA291A;
+}
+
+/* 2 */
+.smallbox[name=features] {
+  border-color: #DA291A;
+}
+
+.smallbox[name=appearance] {
+  border-color: #DA291A;
+}
+
+/* 3 */
+.smallbox[name=guides] {
+  border-color: black;
+}
+
+.smallbox[name=structure] {
+  border-color: black;
+}
+
+/* 4 */
+.smallbox[name=performance] {
+  border-color: black;
+}
+
+.smallbox[name=control] {
+  border-color: black;
+}
+
+/* 5 */
+.bigbox[name=contacts] {
+  border-color: #DA291A;
+}
+
+/*# sourceMappingURL=main.css.map */

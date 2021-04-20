@@ -1,0 +1,66 @@
+/* Animation */
+
+@keyframes numbers_ani {
+  0% {width: 25%; opacity: 0.75; color: $gray;}
+  5% {width: 35%; opacity: 1; color: $red;}
+  25% {width: 35%; opacity: 1; color: $red;}
+  30% {width: 25%; opacity: 0.75; color: $gray;}
+  100%{width: 25%; opacity: 0.75; color: $gray;}
+}
+
+$delay: 8s;
+$duration: 32s;
+
+
+.ani_box {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: bolder;
+  line-height: 0.9;
+  width: 25%;
+  opacity: 0.75;
+  animation-name: numbers_ani;
+  animation-iteration-count: infinite;
+  color: $gray;
+  animation-duration: $duration;
+}
+
+.ani_box[name = 'e1'] {
+  animation-delay: $delay*0;
+}
+
+.ani_box[name = 'e2'] {
+  animation-delay: $delay*1;
+}
+
+.ani_box[name = 'e3'] {
+  animation-delay: $delay*2;
+}
+
+.ani_box[name = 'e4'] {
+  animation-delay: $delay*3;
+}
+
+.ani_box_bottom {
+  h5.num {
+    font-size: 72px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 2px;
+    align-self: center;
+    padding-top: 10px;
+  }
+  h6.num {
+    color: inherit;
+    margin-top: 0;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 50%;
+}
