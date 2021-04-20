@@ -133,12 +133,29 @@ h6 {
   line-height: 1.15;
 }
 
-/* Bones */
-.small_box, .bigbox[name=numbers] {
+/* Boxes */
+.smallbox, .bigbox {
   margin: auto;
   border: solid 3px;
 }
 
+.bigbox {
+  height: 100%;
+  width: calc(100% - 40px);
+}
+
+.smallbox {
+  height: 100%;
+  width: calc(50% - 20px);
+}
+
+.flex {
+  display: flex;
+  margin: auto;
+  width: calc(100% - 20px);
+}
+
+/* Headers */
 .smallbox_header, .bigbox_header {
   display: flex;
   margin-top: -1px;
@@ -151,13 +168,6 @@ h6 {
   background-color: #DA291A;
 }
 
-.smallbox_content, .bigbox_content {
-  display: flex;
-  padding: 7px;
-  line-height: 1.35;
-  text-align: justify;
-}
-
 .header_corner {
   width: 0;
   height: 0;
@@ -165,28 +175,20 @@ h6 {
   border-right: 30px solid transparent;
 }
 
-.flex {
-  display: flex;
-  margin: auto;
-  width: calc(100% - 20px);
-}
-
-.bigbox[name=numbers] {
-  height: 100%;
-  width: calc(100% - 40px);
-}
-
 .bigbox_header_text {
   width: 30%;
 }
 
-.small_box {
-  height: 100%;
-  width: calc(50% - 20px);
-}
-
 .smallbox_header_text {
   width: 60%;
+}
+
+/* Content */
+.smallbox_content, .bigbox_content {
+  display: flex;
+  padding: 7px;
+  line-height: 1.35;
+  text-align: justify;
 }
 
 /* Unique settings */
@@ -208,18 +210,42 @@ h6 {
 .smallbox[name=guides] {
   border-color: black;
 }
+.smallbox[name=guides] .smallbox_header_text {
+  background-color: black;
+}
+.smallbox[name=guides] .header_corner {
+  border-top: 40px solid black;
+}
 
 .smallbox[name=structure] {
   border-color: black;
+}
+.smallbox[name=structure] .smallbox_header_text {
+  background-color: black;
+}
+.smallbox[name=structure] .header_corner {
+  border-top: 40px solid black;
 }
 
 /* 4 */
 .smallbox[name=performance] {
   border-color: black;
 }
+.smallbox[name=performance] .smallbox_header_text {
+  background-color: black;
+}
+.smallbox[name=performance] .header_corner {
+  border-top: 40px solid black;
+}
 
 .smallbox[name=control] {
   border-color: black;
+}
+.smallbox[name=control] .smallbox_header_text {
+  background-color: black;
+}
+.smallbox[name=control] .header_corner {
+  border-top: 40px solid black;
 }
 
 /* 5 */
