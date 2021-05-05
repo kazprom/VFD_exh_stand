@@ -1,0 +1,45 @@
+.accordion {
+  background-color: white;
+  font-family: $font;
+  color: $black;
+  font-size: 18px;
+  line-height: 1.15;
+  cursor: pointer;
+  padding: 18px;
+  margin: 5px;
+  width: 98%;
+  text-align: left;
+  border: none;
+  outline: none;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.4s;
+}
+
+.accordion:active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: "\25B6"; /* Unicode character for "plus" sign (+) */
+  font-size: 15px;
+  color: $red;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\25BC"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: $white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 1px;
+  color: $gray;
+  font-size: 16px;
+  line-height: 1.15;
+}
