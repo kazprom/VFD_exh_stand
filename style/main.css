@@ -255,6 +255,23 @@ h6 {
   text-align: justify;
 }
 
+/* Buttons */
+input {
+  margin-top: none;
+  margin-bottom: 1%;
+  border: none;
+  text-align: center;
+  font-size: 36px;
+  font-family: "FFUnitPro";
+  font-weight: bold;
+  width: 45%;
+  background-color: #DA291A;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
 /* Unique settings */
 /* 1 */
 .bigbox[name=numbers] {
@@ -296,6 +313,11 @@ h6 {
 .smallbox[name=guides] .header_corner {
   border-top: 40px solid black;
 }
+.smallbox[name=guides] .imgbox[name=guide_box] {
+  padding-top: 25%;
+  padding-bottom: 15px;
+  text-align: center;
+}
 
 .smallbox[name=structure] {
   border-color: black;
@@ -331,6 +353,18 @@ h6 {
 /* 5 */
 .bigbox[name=contacts] {
   border-color: #DA291A;
+}
+.bigbox[name=contacts] .imgbox[name=button_box] {
+  padding: 5px;
+  padding-bottom: 15px;
+  width: 50%;
+  text-align: center;
+}
+.bigbox[name=contacts] .imgbox[name=qr_box] {
+  padding: 5px;
+  padding-bottom: 15px;
+  width: 50%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
