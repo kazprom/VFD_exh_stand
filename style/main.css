@@ -155,7 +155,7 @@ html {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 5vw;
   line-height: 1.1;
   color: #DA291A;
   text-align: center;
@@ -163,7 +163,7 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 2.5vw;
   line-height: 1.1;
   color: white;
   text-align: left;
@@ -172,18 +172,16 @@ h2 {
 
 h5 {
   margin: inherit;
-  font-family: "FFUnitPro";
-  font-size: 24px;
+  font-size: 1.5vw;
   line-height: 0.9;
   font-weight: normal;
 }
 
 h6 {
   margin-top: 10px;
-  font-family: "FFUnitPro";
   margin-bottom: 1px;
   color: gray;
-  font-size: 22px;
+  font-size: 1vw;
   font-weight: normal;
   line-height: 1.15;
 }
@@ -261,7 +259,7 @@ input {
   margin-bottom: 1%;
   border: none;
   text-align: center;
-  font-size: 36px;
+  font-size: 2.5vw;
   font-family: "FFUnitPro";
   font-weight: bold;
   width: 45%;
@@ -273,6 +271,10 @@ input {
 }
 
 /* Unique settings */
+.div[name=header] {
+  font-size: calc(100% / 100);
+}
+
 /* 1 */
 .bigbox[name=numbers] {
   border-color: #DA291A;
