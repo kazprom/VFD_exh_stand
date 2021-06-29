@@ -85,7 +85,7 @@ html {
   height: 50%;
 }
 .ani_box_bottom h5.num {
-  font-size: 72px;
+  font-size: 5vw;
   font-weight: bold;
   padding-left: 5px;
   padding-right: 2px;
@@ -96,7 +96,7 @@ html {
   color: inherit;
   margin-top: 0;
   padding-top: 30px;
-  font-size: 30px;
+  font-size: 2.5vw;
   font-weight: bold;
 }
 
@@ -105,7 +105,7 @@ html {
   background-color: white;
   font-family: "FFUnitPro";
   color: black;
-  font-size: 18px;
+  font-size: 1.5vw;
   line-height: 1.15;
   cursor: pointer;
   padding: 18px;
@@ -125,7 +125,7 @@ html {
 .accordion:after {
   content: "▶";
   /* Unicode character for "plus" sign (+) */
-  font-size: 15px;
+  font-size: 1.5vw;
   color: #DA291A;
   float: right;
   margin-left: 5px;
@@ -145,7 +145,7 @@ html {
   transition: max-height 0.2s ease-out;
   margin-bottom: 1px;
   color: gray;
-  font-size: 16px;
+  font-size: 1.5vw;
   line-height: 1.15;
 }
 
@@ -168,6 +168,14 @@ h2 {
   color: white;
   text-align: left;
   margin: 0;
+}
+
+h3 {
+  font-size: 1.5vw;
+}
+
+h4 {
+  font-size: 1.5vw;
 }
 
 h5 {
@@ -271,10 +279,6 @@ input {
 }
 
 /* Unique settings */
-.div[name=header] {
-  font-size: calc(100% / 100);
-}
-
 /* 1 */
 .bigbox[name=numbers] {
   border-color: #DA291A;
@@ -288,13 +292,6 @@ input {
   padding: 5px;
   padding-bottom: 15px;
   width: calc(50% - 15px);
-}
-.smallbox[name=features] .textbox h5 {
-  font-size: 26px;
-}
-.smallbox[name=features] .textbox h6 {
-  font-size: 18px;
-  line-height: 1.35;
 }
 
 .smallbox[name=appearance] {

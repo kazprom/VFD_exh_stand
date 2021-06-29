@@ -1,8 +1,10 @@
+$font-size: 1vw;
+
 .accordion {
   background-color: white;
   font-family: $font;
   color: $black;
-  font-size: 18px;
+  font-size: $font-size * 1.5;
   line-height: 1.15;
   cursor: pointer;
   padding: 18px;
@@ -21,7 +23,7 @@
 
 .accordion:after {
   content: "\25B6"; /* Unicode character for "plus" sign (+) */
-  font-size: 15px;
+  font-size: $font-size * 1.5;
   color: $red;
   float: right;
   margin-left: 5px;
@@ -40,6 +42,6 @@
   transition: max-height 0.2s ease-out;
   margin-bottom: 1px;
   color: $gray;
-  font-size: 16px;
+  font-size: $font-size * 1.5;
   line-height: 1.15;
 }
